@@ -1,13 +1,6 @@
-import { useState } from "react";
 import PropTypes from "prop-types";
 
 function PokemonCard({ pokemon }) {
-  //   const [pokemon, setPokemon] = useState(props.pokemon);
-
-  //   const handleButtonClick = () => {
-  //     setPokemon(props.pokemon);
-  //   };
-
   return (
     <figure className="card">
       {pokemon.imgSrc ? (
@@ -16,7 +9,6 @@ function PokemonCard({ pokemon }) {
         <p>???</p>
       )}
       <figcaption>{pokemon.name}</figcaption>
-      {/* <button onClick={handleButtonClick}>Next Pokemon</button> */}
     </figure>
   );
 }
