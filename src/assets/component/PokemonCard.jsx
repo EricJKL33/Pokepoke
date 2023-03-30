@@ -1,40 +1,12 @@
-
-
-// const pokemonList = [
-//     {
-//         name: "bulbasaur",
-//         imgSrc:
-//         "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png",
-//     },
-//     {
-//         name: "mew",
-//     },
-// ];
-
-// function PokemonCard() {
-//     const pokemon = pokemonList[0];
-//   return (
-//     <figure className="card">
-//       <img src={pokemon.imgSrc} alt={pokemon.name} className="card-img" />
-//       <figcaption>{pokemon.name}</figcaption>
-//     </figure>
-//   );
-// }
-
-
-
-// export default PokemonCard;
-
-
-
 import { useState } from "react";
+import PropTypes from "prop-types";
 
-function PokemonCard({pokemon}) {
-//   const [pokemon, setPokemon] = useState(props.pokemon);
+function PokemonCard({ pokemon }) {
+  //   const [pokemon, setPokemon] = useState(props.pokemon);
 
-//   const handleButtonClick = () => {
-//     setPokemon(props.pokemon);
-//   };
+  //   const handleButtonClick = () => {
+  //     setPokemon(props.pokemon);
+  //   };
 
   return (
     <figure className="card">
@@ -55,6 +27,5 @@ PokemonCard.propTypes = {
     imgSrc: PropTypes.string,
   }).isRequired,
 };
-
 
 export default PokemonCard;

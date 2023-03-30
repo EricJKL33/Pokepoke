@@ -1,12 +1,11 @@
-
-import './App.css'
-import PokemonCard from './assets/component/PokemonCard';
+import "./App.css";
+import PokemonCard from "./assets/component/PokemonCard";
 
 function App() {
-  const pokemon = pokemonList[0]
+  const pokemon = pokemonList[0];
   return (
     <div className="App">
-      <PokemonCard pokemon = {pokemon}/>
+      <PokemonCard pokemon={pokemon} />
     </div>
   );
 }
@@ -14,18 +13,12 @@ function App() {
 const pokemonList = [
   {
     name: "bulbasaur",
-    imgSrc:"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png",
+    imgSrc:
+      "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png",
   },
   {
     name: "mew",
   },
 ];
 
-
-
-
 export default App;
-
-
-
-
