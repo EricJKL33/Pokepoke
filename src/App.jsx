@@ -10,7 +10,11 @@ function App() {
   return (
     <div className="App">
       <PokemonCard pokemon={pokemon} />
-      <NavBar pokemonIndex={pokemonIndex} setPokemonIndex={setPokemonIndex} />
+      <NavBar
+        pokemonList={pokemonList}
+        pokemonIndex={pokemonIndex}
+        setPokemonIndex={setPokemonIndex}
+      />
     </div>
   );
 }
